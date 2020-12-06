@@ -1,0 +1,57 @@
+html{
+   margin: 10px;
+}
+
+
+
+.name{
+    padding:15px;
+}
+
+.jumbotron{
+    display: flex;
+    text-align: center;
+    border: 5px solid black;
+}
+
+
+
+form{
+    display: inline-block;
+    padding: 10%;
+    border: 1px solid black;
+    width: 100%;
+}
+
+#buttonHolder{
+    display: inline-block;
+    padding: 1%;
+    border: 1px solid black;
+ 
+}
+
+#giphyButton{
+    margin:10px;
+}
+
+.btn{
+    margin: 10px;
+}
+
+#gifHolder{
+    padding-top: 5%;
+    background-color: lightgrey;
+    margin: 10px;
+}
+
+
+#gifsAppearHere{    
+    padding-top: 50px;
+    display: inline;
+    gap: 0.5rem;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+    flex-wrap: wrap;
+}
+
+
