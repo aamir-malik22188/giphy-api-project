@@ -3,13 +3,13 @@
 <br />
 
 
-  <h3 align="center">GIPHY API Project</h3>
+  <h1 align="center">GIPHY API Project</h1>
 
   <p align="center">
-    A starter API Application
+    A Starter API Application
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://giphy-api-proj.herokuapp.com/">View Demo</a>
   </p>
 </p>
 
@@ -50,12 +50,12 @@
 <br/>
 
 
-This project was one of my starter projects for API.
+This project was one of my starter projects and the purpose of this project was to learn how to incorporate an API into an application.
 
-Here's why:
-* This project helps build on the Javascript foundation.
-* Provides insight on how to acquire and utilize API Keys and the type of data that needs to be extracted.
-* 
+Objectives:
+* This project helps build on the Javascript foundation, especially for someone new to JS.
+* Provides insight on how to acquire and utilize API Keys.
+* Creates an opportunity to learn how we can manipulate and append incoming data-sets with HTML/CSS/Javascript.
 
 
 
@@ -73,31 +73,29 @@ The following frameworks were used to complete the project.
 
 
 
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
-The project can either viewed at this link [enterprojectdemolink]('projectlink) or the code can be cloned onto a local machine with the steps below.
+The project can either be viewed at this link [Giphy-API-Project](www.heroku.com/) or the code can be cloned onto a local machine with the steps below.
 
 
 ### Installation
 
-1. Get a free API Key at [https://developers.giphy.com/](https://example.com)
-2. Clone the repo
+1. Get a free GIPHY API Key at [https://developers.giphy.com/](https://example.com)
+2. Clone the repository:
    ```sh
    git clone https://github.com/aamir-malik22188/giphy-api-project.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Create a `config.js` file.
-5. Enter your API key in `config.js` with the following format.
+
+3. Create a `config.js` file.
+4. Enter your API key in `config.js` with the following format.
    ```JS
    var config = {
     myKey : '&api_key={ENTER_API_KEY_HERE}&limit=10'
     }
    ```
-6. Start project.
+5. Start project.
 
 
 
@@ -114,6 +112,7 @@ Twitter Handle: [@TheRealAamir](https://twitter.com/TheRealAamir)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
+* [Heroku](www.heroku.com/)
 * [GIPHY API for Developers](https://developers.giphy.com/)
 * [W3 Schools](https://www.w3schools.com/)
 * [Google Fonts](https://fonts.google.com/)
