@@ -1,37 +1,109 @@
+/* Color Pallete
+    Dark grey: #303841
+    Light Grey: #3a4750
+    Red: #d72323
+    White: #eeeeee 
+*/
+/* Fonts
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+*/
+
 html{
-   margin: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100%;
 }
 
 
 
-.name{
-    padding:15px;
+#jumbotronLanding{
+    height: 100vh;
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(360deg, rgba(48,56,65,1) 0%, rgba(238,238,238,1) 100%);
 }
+
 
 .jumbotron{
-    display: flex;
+    background-color: inherit !important;
+    border-radius: 5% !important;
+    
+}
+
+.container h1,p{
+    text-shadow: 0px 0px 10px black;
+}
+
+#landingBackground{
+    background: url('https://giphy.com/embed/xMGh0bajSyNdC');
+    z-index: 10;
+    top: 500px;
+}
+
+#landingButton{
+    background-color: #d72323 !important;
+    color: #eeeeee !important;
+    border:none;
+}
+
+#gifsSection{
+    height: 100%;
+    background: linear-gradient(360deg, rgba(58,71,80,1) 76%, rgba(48,56,65,1) 100%);
+}
+
+.form-group{
+    align-items: center;
     text-align: center;
-    border: 5px solid black;
+    color: #eeeeee;
+}
+
+.form-group label{
+    font-size: 2rem;
 }
 
 
 
-form{
-    display: inline-block;
-    padding: 10%;
-    border: 1px solid black;
-    width: 100%;
-}
+
 
 #buttonHolder{
     display: inline-block;
     padding: 1%;
-    border: 1px solid black;
- 
+    align-items: center;
+    text-align: center;
+    color: #eeeeee;
 }
+
+#buttonHolder p{
+    font-size: 2rem;
+}
+
 
 #giphyButton{
     margin:10px;
+    background-color: #eeeeee !important;
+    color: #d72323;
+    border: none;
+    
+}
+
+#giphyButton:hover{
+    background-color: #d72323 !important;
+    color: #eeeeee !important;
+}
+
+
+
+#show{
+    background-color: #d72323 !important;
+    color: #eeeeee !important;
+    border:none !important;
+    box-shadow: 0px 0px 5px #eeeeee !important;
 }
 
 .btn{
@@ -40,18 +112,62 @@ form{
 
 #gifHolder{
     padding-top: 5%;
-    background-color: lightgrey;
+    background-color: inherit;
+    color: #eeeeee !important;
     margin: 10px;
+    text-align: center;
+    height: 100%;
+}
+
+#gifHolder p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.gifs{
+    display: inline-block;
+    justify-content: center;
+    margin: 0px;
+}
+
+.giphy{
+    max-width: 75%;
 }
 
 
-#gifsAppearHere{    
-    padding-top: 50px;
-    display: inline;
-    gap: 0.5rem;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
-    flex-wrap: wrap;
+
+.footer{
+    color: #eeeeee;
+    text-align: center;
+    bottom:0;
+    width:100%;
+    height:100px;
+    margin-top: 100px;
+
 }
 
 
+@media only screen and (min-width: 760px) {
+    .form-group input{
+        text-align: center;
+        width: 25%;
+        transform: translateX(150%);
+    }
+
+}
+
+@media only screen and (min-width: 1023px) {
+    .form-group{
+        align-items: center;
+        text-align: center;
+    }
+    .form-group input{
+        text-align: center;
+        width: 25%;
+        transform: translateX(150%);
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+}

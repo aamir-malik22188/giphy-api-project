@@ -24,7 +24,7 @@ $(document).ready(function() {
 
       for (var i = 0; i < results.length; i++) {
         	
-        var showDiv = $("<div class='col-sm-4 col-md-4 col-lg-4'>");
+        var showDiv = $("<div class='col-sm-12 col-md-12 col-lg-3 gifs'></div>");
 
         var rating = results[i].rating;
         var defaultAnimatedSrc = results[i].images.fixed_height.url;

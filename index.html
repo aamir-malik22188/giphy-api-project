@@ -15,58 +15,97 @@
         crossorigin="anonymous">
         </script>
 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Patrick+Hand&display=swap" rel="stylesheet">
+
         <script type="text/javascript" src="config.js"></script>
-        
         <script type="text/javascript" src="main.js"></script>
 
     <title>Giphy API</title>
 </head>
 <body>
 
+<section id="jumbotronLanding">
+
+ 
+
     <!-- Jumbotron -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                     <h1 class="display-4">GIPHY-API Project</h1>
-                    <p class="lead">Search for any topic to see your gifs appear</p>
+                    <p class="lead">Search For Your Favorite GIFs</p>
+                    <a class="btn btn-landing"  id="landingButton" href="#gifsSection" role="button">Search Giphy</a>
                 </div>
+                
             </div>
+            
         </div>
     </div>
 </div>
 
+</section>   
+
 <!-- Search Top Bar and Search Results List -->
+
+<section id="gifsSection">
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-12 col-lg-12">
              <form>
                 <div class="form-group">
                     <label for="search">Search Giphs</label>
                     <input type="userinput" class="form-control" id="userInputSearch" aria-describedby="inputSearch" placeholder="Search Topic">
+                    <button type="submit" class="btn btn-primary" id="giphyButton">Submit</button>
                 </div>
-                <button type="submit" class="btn btn-primary" id="giphyButton">Submit</button>
+                
              </form>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6" id="buttonHolder">
-            <p>Search Results-Click on buttons to see Giphs</p>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="buttonHolder">
+            <p>GIPH Buttons</p>
+            <span>(Clcik on Button to display GIFs)</span>
             <div id="search-btn-appear-here"></div>
         </div>
     </div>
 </div>
 
+
+
+
 <!-- Giphys -->
 <div class="container-fluid">
     <div class="row" id="gifHolder">
-        <div class="col-sm-4 col-md-4 col-lg-4" >
-            <h2>Giphs Results</h2>
+        <div class="col-sm-12 col-md-12 col-lg-12" >
+            <p>Giphs Results</p>
+            <span>(Click on GIF for animation)</span>
             <div id="gifsAppearHere"></div>
         </div>
     </div>
 </div>
+
       
-   
+
+
+<footer class="footer">
+    <div class="container">
+            <span >This project was created for Portfolio Purpose</span>
+            <br>
+            <span>GIF results were provided by GIPHY API</span>
+            <br>
+            <span >Github Repo: <a href="https://github.com/aamir-malik22188/giphy-api-project">Click Here</a> </span>   
+      
+    </div>
+  </footer>
+</section>
+
 </body>
+
+
 </html>
