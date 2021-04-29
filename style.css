@@ -11,50 +11,171 @@
 
 html{
     scroll-behavior: smooth;
+    
 }
 
 body{
     height: 100%;
+    
+}
+
+section{
+    background-color: #303841;
 }
 
 
 
-#jumbotronLanding{
+
+#landingContainer {
     height: 100vh;
-    color: #eeeeee;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(360deg, rgba(48,56,65,1) 0%, rgba(238,238,238,1) 100%);
 }
 
 
-.jumbotron{
-    background-color: inherit !important;
-    border-radius: 5% !important;
-    
+.appHeader{
+    background-color: rgba(255, 255, 255, .9);
+    overflow: hidden;
+    padding: 25px;
+    border-radius: 15px;
+    z-index: 1;
 }
 
-.container h1,p{
-    text-shadow: 0px 0px 10px black;
+.col{
+    left: -50%;
 }
 
-#landingBackground{
-    background: url('https://giphy.com/embed/xMGh0bajSyNdC');
-    z-index: 10;
-    top: 500px;
+
+
+.gif{
+    max-width:250px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 40px 40px #DBA632;
 }
+
+   .gif1 {
+       
+       top: -15px;
+       right: -60%;
+       z-index: 0;
+   }
+
+   .gif2 {
+       
+       top: -15px;
+       right: -20%;
+       z-index: 0;
+   }
+
+   .gif3 {
+       
+       top: 0;
+       right: -60%;
+       z-index: 0;
+   }
+
+   .gif4 {
+       top: 0;
+       right: -20%;
+       z-index: 0;
+   }
+
+
+
+@media only screen and (min-width: 768px){
+    .gif {
+        display: inherit;
+        max-width: 350px;
+    }
+    .gif1 {
+        
+        top: 50px;
+        right: -100%;
+        z-index: 0;
+    }
+
+    .gif2 {
+        
+        right: 0;
+        z-index: 0;
+    }
+
+    .gif3 {
+        
+        top: 15px;
+        right: -100%;
+        z-index: 0;
+    }
+
+    .gif4 {
+        top: -50px;
+        right: 0;
+        z-index: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .gif {
+        display: inherit;
+        max-width: 400px;
+    }
+
+    .gif1 {
+        top: 200px;
+        left: 450px;
+        z-index: 0;
+    }
+
+    .gif2 {
+        
+        right: 0;
+        z-index: 0;
+    }
+
+    .gif3 {
+        
+        top: -30px;
+        left: 450px;
+        z-index: 0;
+    }
+
+    .gif4 {
+        
+        top: -200px;
+        right: 0;
+        z-index: 0;
+    }
+
+}
+
 
 #landingButton{
-    background-color: #d72323 !important;
-    color: #eeeeee !important;
-    border:none;
+    border-radius: 15ox;
+    background-color:#303841;
+    color: #eeeeee;
 }
 
+#landingButton:hover{
+    background-color: #d72323;
+}
+
+
+/* ----------------Gif Loading Section---------------- */
 #gifsSection{
     height: 100%;
-    background: linear-gradient(360deg, rgba(58,71,80,1) 76%, rgba(48,56,65,1) 100%);
+    background-color: #3a4750;
+}
+
+h2{
+    color: #eeeeee !important;
+    padding: 25px;
+    font-size: 3rem !important;
+    margin-bottom: 10% !important;
+
 }
 
 .form-group{
@@ -84,26 +205,24 @@ body{
 }
 
 
-#giphyButton{
-    margin:10px;
-    background-color: #eeeeee !important;
-    color: #d72323;
+
+#giphyButton {
+    border-radius: 15ox;
+    background-color: #eeeeee;
+    color: #303841;
     border: none;
-    
 }
 
-#giphyButton:hover{
-    background-color: #d72323 !important;
-    color: #eeeeee !important;
+#giphyButton:hover {
+    background-color: #d72323;
+    color: #eeeeee;
 }
-
-
 
 #show{
-    background-color: #d72323 !important;
-    color: #eeeeee !important;
-    border:none !important;
-    box-shadow: 0px 0px 5px #eeeeee !important;
+        border-radius: 15ox;
+        background-color: #eeeeee;
+        color: #303841;
+        border: none;
 }
 
 .btn{

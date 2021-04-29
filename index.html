@@ -25,26 +25,35 @@
 </head>
 <body>
 
-<section id="jumbotronLanding">
+<section>
 
  
 
     <!-- Jumbotron -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-4">GIPHY-API Project</h1>
-                    <p class="lead">Search For Your Favorite GIFs</p>
-                    <a class="btn btn-landing"  id="landingButton" href="#gifsSection" role="button">Search Giphy</a>
-                </div>
-                
+<div class="container-fluid" id="landingContainer" >
+    <div id="gifsLanding">
+        <img class='gif gif1' src='https://media.giphy.com/media/IwAZ6dvvvaTtdI8SD5/giphy.gif' alt="">
+        <img class='gif gif2' src="https://media.giphy.com/media/l0amJzVHIAfl7jMDos/giphy.gif" alt="">
+        <img class='gif gif3' src="https://media.giphy.com/media/QDQkofeEpiiMo/giphy.gif" alt="">
+        <img class='gif gif4' src="https://media.giphy.com/media/MGdfeiKtEiEPS/giphy.gif" alt="">
+   </div>
+    <div class="row" >
+        <div class="col col-sm-12 col-md-12 col-lg-12">
+            <div class="appHeader">
+                <h1>GIPHY-API Project</h1>
+                <p class="lead">Search For Your Favorite GIFs</p>
+                <a class="btn btn-landing"  id="landingButton" href="#gifsSection" role="button">Search Giphy</a>
             </div>
-            
         </div>
     </div>
+   
 </div>
+
+
+
+        
+ 
+        
 
 </section>   
 
@@ -53,11 +62,20 @@
 <section id="gifsSection">
 
 <div class="container-fluid">
+    <div class="row" id='searcHeader'>
+        <div class="col-sm-12">
+            <h2>Search for GIFs</h2>
+        </div>
+    </div>
+</div>    
+
+
+<div class="container-fluid">
     <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12">
              <form>
                 <div class="form-group">
-                    <label for="search">Search Giphs</label>
+                    
                     <input type="userinput" class="form-control" id="userInputSearch" aria-describedby="inputSearch" placeholder="Search Topic">
                     <button type="submit" class="btn btn-primary" id="giphyButton">Submit</button>
                 </div>
@@ -69,8 +87,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12" id="buttonHolder">
-            <p>GIPH Buttons</p>
-            <span>(Clcik on Button to display GIFs)</span>
+            <p>GIF Buttons</p>
+            <span>(Click on Button to display GIFs)</span>
             <div id="search-btn-appear-here"></div>
         </div>
     </div>
@@ -83,7 +101,7 @@
 <div class="container-fluid">
     <div class="row" id="gifHolder">
         <div class="col-sm-12 col-md-12 col-lg-12" >
-            <p>Giphs Results</p>
+            <p>GIF Results</p>
             <span>(Click on GIF for animation)</span>
             <div id="gifsAppearHere"></div>
         </div>
